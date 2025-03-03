@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://ddq1800aonb8w"]
+
+[ext_resource type="FontFile" uid="uid://bok712vavlahv" path="res://Assets/fonts/PixelOperator8.ttf" id="1_wcbh5"]
+[ext_resource type="Script" path="res://coin_counter.gd" id="2_aphcj"]
+
+[node name="HUD" type="CanvasLayer"]
+
+[node name="coinCounter" type="Label" parent="."]
+offset_left = 27.0
+offset_top = 21.0
+offset_right = 203.0
+offset_bottom = 53.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_fonts/font = ExtResource("1_wcbh5")
+theme_override_font_sizes/font_size = 32
+text = "x coins"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("2_aphcj")
